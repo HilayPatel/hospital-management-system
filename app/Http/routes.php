@@ -116,27 +116,27 @@ Route::group(['middleware' => ['auth']] , function() {
 	//OperationType
 
 	Route::get('/operationType' , [
-		'uses' => 'Operationcontroller@operationTypeIndex',
+		'uses' => 'OperationController@operationTypeIndex',
 		'as' => 'operationType.index'
 	]);
 
 	Route::post('/operationType/save' , [
-		'uses' => 'Operationcontroller@operationTypesave',
+		'uses' => 'OperationController@operationTypesave',
 		'as' => 'operationType.save'
 	]);
 
 	Route::post('/operationType/update' , [
-		'uses' => 'Operationcontroller@operationTypeupdate',
+		'uses' => 'OperationController@operationTypeupdate',
 		'as' => 'operationType.update'
 	]);
 
 	Route::get('/operationType/delete' , [
-		'uses' => 'Operationcontroller@operationTypedelete',
+		'uses' => 'OperationController@operationTypedelete',
 		'as' => 'operationType.delete'
 	]);
 
 	Route::get('/operationType/list/operation' , [
-		'uses' => 'Operationcontroller@operationTypeViewList',
+		'uses' => 'OperationController@operationTypeViewList',
 		'as' => 'operationType.list'
 	]);
 
